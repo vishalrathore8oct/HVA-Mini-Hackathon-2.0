@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, #08203e, #557c93);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    border: 1px solid #fff;
+    width: 80%;
+    max-width: 850px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+  
+
+.main-container h1 {
+    font-size:50px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.quiz-container .question-data {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.quiz-container .options {
+    margin-top: 20px;
+}
+
+.options .opt {
+    font-size: 20px;
+    background-color: #eee;
+    color: #000;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+}
+
+.opt:hover {
+    background-color: #ddd;
+}
+
+
+
+.btn {
+    width: 60%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 20px;
+    margin: 20px auto 0 auto;
+    background-color: #006400;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #08780c;
+}
+
+#start-btn {
+    background-color: red;
+}
+
+
+.player-setup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}   
+
+.player-setup label {
+    font-size: 20px;
+}
+
+.player-setup input {
+    width: 60%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}   
+
+.category label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.category select {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; 
+}
+
+.opt.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.scoreboard section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.scoreboard p {
+    font-size: 25px;
+}
+
+
+.hide-data {
+    display: none;
+}
+
+#result {
+    font-size: 40px;
+    margin-top: 20px;
+    text-align: center;
+    color: #212121;
+    font-weight: bold;
+}
+
+#end-btn {
+    background-color: red;
+}
+
+#answer-type {
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#player-turn {
+    font-size: 40px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+

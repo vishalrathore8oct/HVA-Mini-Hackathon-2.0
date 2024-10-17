@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main-container">
+    <h1 class="heading">Let's Play A Trivia Quiz Game</h1>
+
+    <h2 id="player-turn"></h2>
+
+    <!-- Player Setup Section -->
+    <div class="player-setup">
+      <div>
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" placeholder="Player 1 Name" />
+      </div>
+      <div>
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" placeholder="Player 2 Name" />
+      </div>
+    </div>
+
+    <!-- Category Selection -->
+    <div class="category">
+      <label for="category">Select Category:</label>
+      <br /><br />
+      <select name="category" id="category">
+        <option value="" disabled selected>Select a category</option>
+        <option class="category-option" value="general_knowledge">
+          General Knowledge
+        </option>
+        <option class="category-option" value="sport_and_leisure">
+          Sport and Leisure
+        </option>
+        <option class="category-option" value="arts_and_literature">
+          Arts and Literature
+        </option>
+        <option class="category-option" value="science">Science</option>
+        <option class="category-option" value="food_and_drink">
+          Food and Drink
+        </option>
+        <option class="category-option" value="film_and_tv">
+          Film and TV
+        </option>
+        <option class="category-option" value="geography">Geography</option>
+      </select>
+      <br /><br />
+      <button class="btn" id="start-btn">Start Game</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container hide-data">
+      <h2 class="question-data"></h2>
+
+      <div class="options">
+        <p class="opt option1"></p>
+        <p class="opt option2"></p>
+        <p class="opt option3"></p>
+        <p class="opt option4"></p>
+      </div>
+
+      <button class="btn" id="next-btn">Next</button>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard hide-data">
+      <section>
+        <div>
+          <p>Player 1</p>
+          <br />
+          <p id="player1Name"></p>
+        </div>
+
+        <div>
+          <p>Player 2</p>
+          <br />
+          <p id="player2Name"></p>
+        </div>
+      </section>
+
+      <div id="result" class="result"></div>
+      <button class="btn" id="restart-btn">Restart Game</button>
+      <button class="btn" id="end-btn">End Game</button>
+    </div>
+
+    <p id="answer-type"></p>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
