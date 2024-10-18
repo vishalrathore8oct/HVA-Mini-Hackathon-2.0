@@ -24,10 +24,9 @@ body {
     flex-direction: column;
     gap: 40px;
 }
-  
 
 .main-container h1 {
-    font-size:50px;
+    font-size: 50px;
     margin-bottom: 40px;
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -57,8 +56,6 @@ body {
 .opt:hover {
     background-color: #ddd;
 }
-
-
 
 .btn {
     width: 60%;
@@ -91,7 +88,7 @@ button {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-}   
+}
 
 .player-setup label {
     font-size: 20px;
@@ -104,7 +101,7 @@ button {
     border: none;
     border-radius: 5px;
     outline: none;
-}   
+}
 
 .category label {
     font-weight: bold;
@@ -116,7 +113,7 @@ button {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 .opt.selected {
@@ -133,7 +130,6 @@ button {
 .scoreboard p {
     font-size: 25px;
 }
-
 
 .hide-data {
     display: none;
@@ -164,14 +160,3 @@ button {
     font-size: 40px;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
